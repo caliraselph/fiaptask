@@ -12,6 +12,8 @@ while conn.vb_connect:
   print("---- CONSULTA E PROJEÇÃO DE DADOS PARA RESOLUÇÃO DE PROBLEMAS EM CULTIVOS----")
   print("""
   1 - Listar Tipos de Solo
+  2 - Mostrar Temperatura Atual
+  3 - Mostrar Temperatura do Dia
   6 - SAIR
   """)
   # Captura a escolha do usuário

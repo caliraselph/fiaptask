@@ -46,7 +46,5 @@ def data_temperature_future(latitude, longitude):
         print('Error: ', e)
 
 
-data_temperature_future(-27.09,-52.61)
-
 
 
