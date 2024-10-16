@@ -7,7 +7,7 @@ def read_crop():
     with open('E:/Temp/leitura_cultivos.txt', 'r', encoding='utf-8') as file:
         for line in file:
             cultivo_id,tp_cultivo_id,parcela_id,data_semeadura,data_colheita,rendimento = line.strip().split(',')
-            data_save(cultivo_id,tp_cultivo_id,parcela_id,data_semeadura,data_colheita,rendimento)
+            print('Leitura: ',cultivo_id,tp_cultivo_id,parcela_id,data_semeadura,data_colheita,rendimento)
 
 
 def data_save(cultivo_id,tp_cultivo_id,parcela_id,data_semeadura,data_colheita,rendimento):
@@ -23,5 +23,3 @@ def data_save(cultivo_id,tp_cultivo_id,parcela_id,data_semeadura,data_colheita,r
 
     except Exception as e:
             print('Error: ', e)
-
-read_crop()

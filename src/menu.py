@@ -6,7 +6,7 @@ import os
 from src.dao.agro_tp_cultivo import data_select
 from src.api_temperature import data_temperature_now
 from src.api_temperature import data_temperature_future
-
+from src.dao.agro_cultivo import read_crop
 
 while conn.vb_connect:
   os.system('cls')
@@ -30,7 +30,7 @@ while conn.vb_connect:
    case 3:
     data_temperature_future(-27.09, -52.61)
    case 4:
-    data_temperature_future(-27.09, -52.61)
+    read_crop()
    case 6:
     break
 
