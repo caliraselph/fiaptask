@@ -17,7 +17,7 @@ while conn.vb_connect:
   2 - Mostrar Temperatura Atual (api-json)
   3 - Listar Temperatura do Dia (api-json)
   4 - Leitura de cultivos (arquivo txt)
-  6 - SAIR
+  5 - SAIR
   """)
   # Captura a escolha do usuário
   vn_option = int(input( ' ' + "Escolha -> "))
@@ -31,7 +31,7 @@ while conn.vb_connect:
     data_temperature_future(-27.09, -52.61)
    case 4:
     read_crop()
-   case 6:
+   case 5:
     break
 
 
