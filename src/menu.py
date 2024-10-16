@@ -4,6 +4,8 @@ import os
 #
 # from src.dao.agro_tp_cultivo import data_select
 from src.dao.agro_tp_cultivo import data_select
+from src.api_temperature import data_temperature_now
+from src.api_temperature import data_temperature_future
 
 
 while conn.vb_connect:
@@ -11,9 +13,10 @@ while conn.vb_connect:
 
   print("---- CONSULTA E PROJEÇÃO DE DADOS PARA RESOLUÇÃO DE PROBLEMAS EM CULTIVOS----")
   print("""
-  1 - Listar Tipos de Solo
-  2 - Mostrar Temperatura Atual
-  3 - Mostrar Temperatura do Dia
+  1 - Listar Tipos de Solo (Oracle db)
+  2 - Mostrar Temperatura Atual (api-json)
+  3 - Listar Temperatura do Dia (api-json)
+  4 - Leitura de cultivos (arquivo txt)
   6 - SAIR
   """)
   # Captura a escolha do usuário
@@ -22,6 +25,12 @@ while conn.vb_connect:
   match vn_option:
    case 1:
     data_select()
+   case 2:
+    data_temperature_now(-27.09,-52.61)
+   case 3:
+    data_temperature_future(-27.09, -52.61)
+   case 4:
+    data_temperature_future(-27.09, -52.61)
    case 6:
     break
 

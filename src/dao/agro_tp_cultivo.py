@@ -1,5 +1,4 @@
 import pandas as pd
-
 import src.dao.connect_oracle as conn
 
 def data_select():

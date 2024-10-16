@@ -24,7 +24,7 @@ def data_temperature_now(latitude, longitude):
            vv_unit_temperature_2m = data_json['current_units']['temperature_2m']
            vv_unit_wind_speed_10m = data_json['current_units']['wind_speed_10m']
 
-           print(vv_val_time ,vv_unit_time)
+           print('A temperatura atual: ',vv_val_temperature_2m,vv_unit_temperature_2m,vv_val_interval,vv_unit_interval,vv_val_time,vv_unit_time,vv_val_wind_speed_10m,vv_unit_wind_speed_10m)
 
     except Exception as e:
         print('Error: ', e)
